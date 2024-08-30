@@ -1,15 +1,16 @@
 from src.calc import *
+import pytest
 
 
 # Тест функции сложения
-def test_add():
+def test_add(numbers):
     assert add(2, 3) == 5
     assert add(-2, 3) == 1
     assert add(0, 0) == 0
 
 
 # Тест функции вычитания
-def test_subtract():
+def test_subtract(numbers_2):
     assert subtract(2, 3) == -1
     assert subtract(-2, 3) == -5
     assert subtract(0, 0) == 0
